@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -105,7 +105,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300 bold;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
@@ -117,6 +117,6 @@
 
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.2;
+    transition-delay: $x * 0.5;
   }
 }
